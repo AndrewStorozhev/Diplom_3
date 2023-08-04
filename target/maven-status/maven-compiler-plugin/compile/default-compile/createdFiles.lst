@@ -1,0 +1,13 @@
+praktikum\api\User.class
+praktikum\browser\BrowserTypeSetup$1.class
+praktikum\api\BaseAPI.class
+praktikum\api\ConfigAPI.class
+praktikum\pages\RegistrationPage.class
+praktikum\pages\LoginPage.class
+praktikum\pages\ForgotPasswordPage.class
+praktikum\browser\Browser.class
+praktikum\pages\ProfilePage.class
+praktikum\api\UserLogin.class
+praktikum\browser\BrowserTypeSetup.class
+praktikum\pages\MainPage.class
+praktikum\api\UserRegistration.class
