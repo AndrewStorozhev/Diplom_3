@@ -19,7 +19,7 @@ public class MainPage  {
     private final By ingredientsChapter = By.xpath(".//span[text()='Начинки']");
     private final By theChosenElement  = By.className("tab_tab_type_current__2BEPc");
 
-    public MainPage(WebDriver driver) { // Инициализировали в нём поле driver
+    public MainPage(WebDriver driver) {
         this.driver = driver;
     }
 

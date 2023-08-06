@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 public class ProfilePage {
 
     private final WebDriver driver;
-
     private final By nameField = By.xpath(".//input[@value='Enotiy']");
 
     public ProfilePage(WebDriver driver) {
@@ -18,5 +17,6 @@ public class ProfilePage {
     public By getNameField() {
         return nameField;
     }
+
 
 }

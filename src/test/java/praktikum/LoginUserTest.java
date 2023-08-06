@@ -34,7 +34,6 @@ public class LoginUserTest extends BaseMethods {
         LoginPage loginPage = new LoginPage(getDriver());
         loginPage.login(getEmail(), getPassword());
         mainPage.clickOnPersonalArea();
-        ProfilePage profilePage = new ProfilePage(getDriver());
         Assert.assertTrue(getDriver().findElement(mainPage.getConstructBurgerHeader()).isDisplayed());
     }
 

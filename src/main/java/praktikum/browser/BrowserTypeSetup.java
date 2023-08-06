@@ -19,7 +19,6 @@ public class BrowserTypeSetup {
                 driver = new ChromeDriver(options);
                 break;
             case CHROME:
-                options.addArguments("--remote-allow-origins=*");
                 driver = new ChromeDriver(options);
                 break;
         }
