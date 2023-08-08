@@ -22,7 +22,7 @@ public class LoginUserTest extends BaseMethods {
         LoginPage loginPage = new LoginPage(getDriver());
         loginPage.login(getEmail(), getPassword());
         mainPage.clickOnPersonalArea();
-        ProfilePage profilePage = new ProfilePage(getDriver());
+        ProfilePage profilePage = new ProfilePage();
         Assert.assertTrue(getDriver().findElement(profilePage.getNameField()).isDisplayed());
     }
 
@@ -34,7 +34,8 @@ public class LoginUserTest extends BaseMethods {
         LoginPage loginPage = new LoginPage(getDriver());
         loginPage.login(getEmail(), getPassword());
         mainPage.clickOnPersonalArea();
-        Assert.assertTrue(getDriver().findElement(mainPage.getConstructBurgerHeader()).isDisplayed());
+        ProfilePage profilePage = new ProfilePage();
+        Assert.assertTrue(getDriver().findElement(profilePage.getNameField()).isDisplayed());
     }
 
     @Test
@@ -48,7 +49,7 @@ public class LoginUserTest extends BaseMethods {
         registerPage.clickSignInButton();
         loginPage.login(getEmail(), getPassword());
         mainPage.clickOnPersonalArea();
-        ProfilePage profilePage = new ProfilePage(getDriver());
+        ProfilePage profilePage = new ProfilePage();
         Assert.assertTrue(getDriver().findElement(profilePage.getNameField()).isDisplayed());
     }
 
@@ -63,7 +64,7 @@ public class LoginUserTest extends BaseMethods {
         forgotPasswordPage.clickOnEnterLinkOnForgotPasswordPage();
         loginPage.login(getEmail(), getPassword());
         mainPage.clickOnPersonalArea();
-        ProfilePage profilePage = new ProfilePage(getDriver());
+        ProfilePage profilePage = new ProfilePage();
         Assert.assertTrue(getDriver().findElement(profilePage.getNameField()).isDisplayed());
     }
 

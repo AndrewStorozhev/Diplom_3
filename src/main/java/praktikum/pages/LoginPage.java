@@ -17,7 +17,7 @@ public class LoginPage {
     private final By restorePasswordLink = By.xpath(".//a[text()='Восстановить пароль']");
 
 
-    public LoginPage(WebDriver driver) { // Инициализировали в нём поле driver
+    public LoginPage(WebDriver driver) {
         this.driver = driver;
     }
 
